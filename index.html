@@ -17,7 +17,10 @@
             line-height: 1.6;
         }
         header {
-            background: linear-gradient(90deg, #01257D, #00FFFF);
+            background: linear-gradient(90deg, rgba(1, 37, 125, 0.5), rgba(0, 255, 255, 0.5)), url('night_city_road_moving_traffic.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
             color: white;
             padding: 15px 20px;
             font-size: 24px;
@@ -37,7 +40,7 @@
             box-sizing: border-box;
         }
         .logo {
-            height: 50px;
+            height: 250px;
             margin-right: 10px;
         }
         header span {
@@ -48,7 +51,10 @@
             text-overflow: ellipsis;
         }
         nav {
-            background: #00FFFF;
+            background: linear-gradient(90deg, rgba(0, 255, 255, 0.6), rgba(1, 37, 125, 0.6)), url('night_city_road_moving_traffic.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
             padding: 10px 0;
             position: fixed;
             top: 80px;
@@ -81,6 +87,7 @@
             background: linear-gradient(90deg, #01257D, rgba(0, 255, 255, 0.8)), url('hero-bg.jpg');
             background-size: cover;
             background-position: center;
+            background-attachment: fixed; /* Added for parallax effect */
             text-align: center;
             padding: 120px 40px;
             color: white;
@@ -154,11 +161,19 @@
             font-weight: bold;
             text-align: center;
         }
+        .parallax {
+            background-image: url('night_city_road_moving_traffic.jpeg'); /* Path to your image */
+            height: 400px; /* Adjust height as needed */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
     </style>
 </head>
 <body>
     <header>
-        <img src="Logo.png" alt="Logicare India Logo" class="logo">
+        <img src="Logo.svg" alt="Logicare India Logo" class="logo">
         <span>Logicare India</span>
     </header>
     <nav>
@@ -174,6 +189,10 @@
         <p>Seamless, technology-driven logistics for enterprises</p>
         <a href="#contact" class="cta-button">Get in Touch</a>
     </div>
+
+    <!-- Parallax Section -->
+    <div class="parallax"></div>
+
     <div class="container">
         <section id="services" class="section">
             <h2>Our Services</h2>
