@@ -6,59 +6,56 @@
     <title>Logicare India - Enterprise Logistics</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
-        /* General Styles */
         body {
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #b4b1b1;
-            color: #333;
+            background-color: #01257D;
+            color: #fff;
             scroll-behavior: smooth;
             overflow-x: hidden;
             line-height: 1.6;
         }
-
-        /* Header Styles */
         header {
-            background: linear-gradient(90deg, #D40511, #A0000E);
+            background: linear-gradient(90deg, #01257D, #00FFFF);
             color: white;
-            padding: 20px 20px;
+            padding: 15px 20px;
             font-size: 24px;
             font-weight: bold;
             text-transform: uppercase;
             letter-spacing: 2px;
             display: flex;
-            justify-content: space-between;
             align-items: center;
+            justify-content: space-between;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             position: fixed;
             width: 100%;
             top: 0;
             left: 0;
             z-index: 1000;
+            height: 80px;
+            box-sizing: border-box;
         }
-
         .logo {
-            max-height: 50px;
-            margin-left: 20px;
+            height: 50px;
+            margin-right: 10px;
         }
-
-        .header-title {
+        header span {
             flex-grow: 1;
             text-align: center;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
-
-        /* Navigation Bar */
         nav {
-            background: #FDD835;
-            padding: 15px 0;
+            background: #00FFFF;
+            padding: 10px 0;
             position: fixed;
-            top: 110px;
+            top: 80px;
             width: 100%;
             z-index: 999;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-
         nav ul {
             list-style: none;
             padding: 0;
@@ -67,9 +64,8 @@
             justify-content: center;
             gap: 30px;
         }
-
         nav ul li a {
-            color: #333;
+            color: #01257D;
             text-decoration: none;
             font-size: 18px;
             font-weight: bold;
@@ -77,155 +73,93 @@
             border-radius: 5px;
             transition: all 0.3s ease;
         }
-
         nav ul li a:hover {
-            color: rgb(248, 33, 33);
-            /* background: #D40511; */
+            color: #fff;
+            background: #01257D;
         }
-
-        /* Container */
+        .hero {
+            background: linear-gradient(90deg, #01257D, rgba(0, 255, 255, 0.8)), url('hero-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            padding: 120px 40px;
+            color: white;
+        }
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        .hero .cta-button {
+            background: #00FFFF;
+            color: #01257D;
+            padding: 12px 25px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .hero .cta-button:hover {
+            background: #fff;
+            color: #01257D;
+        }
         .container {
-            padding: 160px 20px 50px;
+            padding: 80px 40px;
             max-width: 1200px;
             margin: auto;
-            top: 250px;
-            text-align: left;
+            text-align: center;
         }
-
-        /* Section Styles */
         .section {
-            padding: 60px 20px;
+            padding: 50px 30px;
             margin-bottom: 30px;
-            background: white;
+            background: #fff;
+            color: #01257D;
             border-radius: 10px;
-            top: 100px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
         }
-
         .section h2 {
-            color: #D40511;
-            text-align: center;
-            margin-bottom: 20px;
+            color: #00FFFF;
+            font-size: 28px;
+            margin-bottom: 15px;
         }
-
-        .section p {
-            text-align: center;
-            font-size: 18px;
-            margin-bottom: 20px;
-        }
-
-        /* Services Section */
         .services {
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
-            margin-top: 20px;
             gap: 20px;
         }
-
         .service-box {
-            background: white;
+            background: #01257D;
+            color: white;
             padding: 20px;
             width: 30%;
+            border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            border-radius: 10px;
             text-align: center;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-
         .service-box:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
         }
-
-        .service-box h3 {
-            color: #D40511;
-            margin-bottom: 10px;
-        }
-
-        .service-box p {
-            font-size: 16px;
-            color: #555;
-        }
-
-        /* Truck Animation */
-        .truck-animation {
-            position: absolute;
-            top: 100px;
-            left: -200px;
-            width: 150px;
-            animation: moveTruck 8s linear infinite;
-        }
-
-        @keyframes moveTruck {
-            0% { left: -200px; }
-            100% { left: 100%; }
-        }
-
-        /* Footer */
         footer {
-            background: #D40511;
+            background: #01257D;
             color: white;
             padding: 20px 0;
-            margin-top: 30px;
             font-size: 16px;
             font-weight: bold;
             text-align: center;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            nav ul {
-                flex-direction: column;
-                gap: 10px;
-            }
-
-            .services {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .service-box {
-                width: 80%;
-            }
-
-            .truck-animation {
-                width: 100px;
-            }
         }
     </style>
 </head>
 <body>
     <header>
-        <!-- SVG Truck Illustration -->
-        <svg width="150" height="75" viewBox="0 0 300 150" xmlns="http://www.w3.org/2000/svg" style="display: block; position: relative; z-index: 10;">
-          <!-- Truck Body -->
-          <rect x="40" y="50" width="130" height="50" fill="#FF7F00" stroke="#D65A00" stroke-width="2" rx="10" />
-          <!-- Truck Cabin -->
-          <rect x="160" y="55" width="60" height="45" fill="#0057B8" stroke="#003F7F" stroke-width="2" rx="8" />
-          <!-- Windshield -->
-          <polygon points="170,55 210,55 200,75 170,75" fill="#B3E5FC" stroke="#007ACC" stroke-width="2" />
-          <!-- Headlights -->
-          <circle cx="215" cy="70" r="5" fill="#FFD700" stroke="#D4AF37" stroke-width="1" />
-          <!-- Wheels -->
-          <circle cx="60" cy="110" r="14" fill="#333" />
-          <circle cx="140" cy="110" r="14" fill="#333" />
-          <circle cx="190" cy="110" r="14" fill="#333" />
-          <!-- Wheel Caps -->
-          <circle cx="60" cy="110" r="5" fill="#777" />
-          <circle cx="140" cy="110" r="5" fill="#777" />
-          <circle cx="190" cy="110" r="5" fill="#777" />
-          <!-- Motion Lines -->
-          <line x1="10" y1="65" x2="30" y2="65" stroke="#FFF3CD" stroke-width="4" stroke-linecap="round" />
-          <line x1="10" y1="75" x2="30" y2="75" stroke="#FFF3CD" stroke-width="4" stroke-linecap="round" />
-          <!-- Exhaust Pipe -->
-          <rect x="30" y="45" width="8" height="20" fill="#555" stroke="#333" stroke-width="1" />
-          <!-- Company Name -->
-          <text x="220" y="85" font-family="Arial, sans-serif" font-size="20" fill="#FFF3CD" font-weight="bold">
-            Logicare India
-          </text>
-        </svg>
-        <div class="header-title">Logicare India</div>
+        <img src="Logo.png" alt="Logicare India Logo" class="logo">
+        <span>Logicare India</span>
     </header>
     <nav>
         <ul>
@@ -235,38 +169,28 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-    <!-- <img src="truck.png" alt="Moving Truck" class="truck-animation"> -->
-
+    <div class="hero">
+        <h1>Optimizing Logistics with Smart Solutions</h1>
+        <p>Seamless, technology-driven logistics for enterprises</p>
+        <a href="#contact" class="cta-button">Get in Touch</a>
+    </div>
     <div class="container">
-        <section id="home" class="section">
-            <h2>Welcome to Logicare India</h2>
-            <p>At Logicare India, we redefine logistics with seamless, technology-driven solutions tailored for enterprises. Our commitment to efficiency and reliability ensures your supply chain operates at peak performance.</p>
-        </section>
-        <section id="about" class="section">
-            <h2>About Us</h2>
-            <p>We are a leading logistics company specializing in freight management, warehouse solutions, and supply chain optimization.</p>
-        </section>
         <section id="services" class="section">
             <h2>Our Services</h2>
             <div class="services">
                 <div class="service-box">
                     <h3>Freight Management</h3>
-                    <p>Seamless transportation of goods with real-time tracking.</p>
+                    <p>Seamless transportation with real-time tracking.</p>
                 </div>
                 <div class="service-box">
                     <h3>Warehouse Solutions</h3>
-                    <p>State-of-the-art storage facilities for secure inventory management.</p>
+                    <p>Secure inventory management with state-of-the-art storage.</p>
                 </div>
                 <div class="service-box">
                     <h3>Supply Chain Optimization</h3>
-                    <p>Customized logistics solutions to improve efficiency and reduce costs.</p>
+                    <p>Custom logistics solutions to boost efficiency.</p>
                 </div>
             </div>
-        </section>
-        <section id="contact" class="section">
-            <h2>Contact Us</h2>
-            <p>📞 9823306855</p>
-            <p>✉️ <a href="mailto:logicare.india1@gmail.com">logicare.india1@gmail.com</a></p>
         </section>
     </div>
     <footer>
