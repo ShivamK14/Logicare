@@ -7,6 +7,10 @@ export default defineConfig({
   server: {
     host: "0.0.0.0",
     port: process.env.PORT || 5173,
+    allowedHosts: [
+      "logicare.onrender.com",
+      ".onrender.com", // Allow all Render subdomains
+    ],
     strictPort: true,
   },
   preview: {
