@@ -1,0 +1,13 @@
+# Alternative: Static Site Configuration (Simpler, often free)
+# Rename this to render.yaml if you want to use static site instead
+
+services:
+  - type: static
+    name: logicare-india-static
+    rootDir: LogicareIndia
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist  # Where Vite builds your files
+    headers:
+      - path: /*
+        name: X-Frame-Options
+        value: DENY
