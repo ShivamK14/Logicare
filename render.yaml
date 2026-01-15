@@ -1,18 +1,18 @@
 services:
-  - type: web                    # Service type: 'web' for web services, 'static' for static sites
-    name: logicare-india         # Name of your service in Render dashboard
-    runtime: node                # Runtime environment (node, python, docker, etc.)
-    plan: free                   # Pricing plan: free, starter, standard, etc.
-    
+  - type: web # Service type: 'web' for web services, 'static' for static sites
+    name: logicare-india # Name of your service in Render dashboard
+    runtime: node # Runtime environment (node, python, docker, etc.)
+    plan: free # Pricing plan: free, starter, standard, etc.
+
     # IMPORTANT: Root directory where package.json is located
-    rootDir: LogicareIndia
-    
+    rootDir: Logicareindia
+
     # Build command - runs during deployment to build your app
     buildCommand: npm install && npm run build
-    
+
     # Start command - runs to start your application server
     startCommand: npm run preview
-    
+
     # Environment variables
     envVars:
       - key: NODE_ENV
