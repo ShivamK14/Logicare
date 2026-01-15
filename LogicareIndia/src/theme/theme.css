@@ -1,0 +1,83 @@
+/**
+ * ============================================
+ * CENTRALIZED COLOR THEME CONFIGURATION
+ * ============================================
+ * 
+ * ⚠️ THIS IS THE ONLY FILE YOU NEED TO EDIT TO CHANGE COLORS
+ * 
+ * All colors used throughout the application are defined here.
+ * Changing values in this file will automatically update the entire site.
+ * 
+ * After making changes:
+ * 1. Save this file
+ * 2. The dev server will automatically reload
+ * 3. All components using these colors will update
+ * 
+ * ============================================
+ * HOW TO USE:
+ * ============================================
+ * 
+ * In your components, use Tailwind classes like:
+ * - bg-primary-500    (background)
+ * - text-primary-600 (text color)
+ * - border-primary-300 (border)
+ * - hover:bg-primary-600 (hover state)
+ * 
+ * ============================================
+ * CURRENT THEME: Red
+ * ============================================
+ */
+
+:root {
+  /* Primary Brand Color (Red) */
+  --color-primary-50: #fef2f2;
+  --color-primary-100: #fee2e2;
+  --color-primary-200: #fecaca;
+  --color-primary-300: #fca5a5;
+  --color-primary-400: #f92727; /* Main brand color */
+  --color-primary-500: #ef4444;
+  --color-primary-600: #dc2626;
+  --color-primary-700: #b91c1c;
+  --color-primary-800: #991b1b;
+  --color-primary-900: #7f1d1d;
+
+  /* Secondary/Accent Color (Blue) */
+  --color-accent-50: #f0f9ff;
+  --color-accent-100: #e0f2fe;
+  --color-accent-200: #bae6fd;
+  --color-accent-300: #7dd3fc;
+  --color-accent-400: #38bdf8;
+  --color-accent-500: #0ea5e9;
+  --color-accent-600: #0284c7;
+  --color-accent-700: #0369a1;
+  --color-accent-800: #075985;
+  --color-accent-900: #0c4a6e;
+
+  /* Neutral Colors (Grays) */
+  --color-neutral-50: #fafafa;
+  --color-neutral-100: #f5f5f5;
+  --color-neutral-200: #e5e5e5;
+  --color-neutral-300: #d4d4d4;
+  --color-neutral-400: #a3a3a3;
+  --color-neutral-500: #737373;
+  --color-neutral-600: #525252;
+  --color-neutral-700: #404040;
+  --color-neutral-800: #262626;
+  --color-neutral-900: #171717;
+
+  /* Semantic Colors */
+  --color-success-50: #f0fdf4;
+  --color-success-100: #dcfce7;
+  --color-success-500: #22c55e;
+  --color-success-600: #16a34a;
+
+  --color-error-50: #fef2f2;
+  --color-error-100: #fee2e2;
+  --color-error-500: #ef4444;
+  --color-error-600: #dc2626;
+
+  --color-warning-50: #fffbeb;
+  --color-warning-100: #fef3c7;
+  --color-warning-500: #f59e0b;
+  --color-warning-600: #d97706;
+}
