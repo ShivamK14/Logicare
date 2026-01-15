@@ -5,7 +5,7 @@ services:
     plan: free # Pricing plan: free, starter, standard, etc.
 
     # IMPORTANT: Root directory where package.json is located
-    rootDir: Logicareindia
+    rootDir: .
 
     # Build command - runs during deployment to build your app
     buildCommand: npm install && npm run build
